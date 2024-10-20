@@ -1,0 +1,35 @@
+POST http://localhost:80/store_backend/api.php HTTP/1.1
+Content-Type: application/json
+
+{ "name":"Avengers", "price":3.99, "sku":"JVC00002", "type":"dvd", "size":450}
+
+###
+POST http://localhost:80/store_backend/api.php HTTP/1.1
+Content-Type: application/json
+
+{ "name":"Oliver Twist", "price":3.99, "sku":"BK00004", "type":"book", "weight":2.2}
+
+###
+POST http://localhost:80/store_backend/api.php HTTP/1.1
+Content-Type: application/json
+
+{ "name":"Table", "price":400, "sku":"FU00002", "type":"furniture", "height":300, "width":300, "length":300}
+
+###
+
+GET http://localhost:80/store_backend/api.php HTTP/1.1
+
+###
+GET http://localhost:80/store_backend/api.php?sku=BK00001&type=book HTTP/1.1
+
+###
+DELETE http://localhost:80/store_backend/api.php HTTP/1.1
+Content-Type: application/json
+
+["BK00002"]
+
+
+###
+PATCH http://localhost:80/store_backend/api.php HTTP/1.1
+
+
